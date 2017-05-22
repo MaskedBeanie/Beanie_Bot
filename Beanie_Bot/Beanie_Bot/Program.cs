@@ -3,7 +3,7 @@ using System.Linq;
 using Discord;
 using Discord.Commands;
 
-namespace Beanie_Bot_9000
+namespace Beanie_Bot
 {
     public class Program
     {
@@ -158,7 +158,7 @@ namespace Beanie_Bot_9000
 
         public static void LogHandler(object sender, LogMessageEventArgs e)
         {
-            Console.WriteLine($"[{e.Severity}] [{e.Source}] {e.Message}");
+            Console.WriteLine(e.Message);
         }
 
     }
